@@ -1,7 +1,4 @@
-package sliding_window;
-
-import java.util.HashMap;
-import java.util.Map;
+package SlidingWindow;
 
 public class ContainsDuplicateII {
     public static boolean containsNearbyDuplicate(int[] nums, int k) {

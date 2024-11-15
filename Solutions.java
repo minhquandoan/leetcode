@@ -1,10 +1,6 @@
-import java.util.HashMap;
-import java.util.Map;
-
-import hash_table.FindAllDuplicatesInArray;
-import sliding_window.ContainsDuplicateII;
-import sliding_window.FindPowerOfSubarray;
-import sliding_window.MaximumSumOfDistinctSubarrWithK;
+import SlidingWindow.MaximumSumOfDistinctSubarrWithK;
+import Stack.ScoreOfParentheses;
+import Stack.ValidParentheses;
 
 public class Solutions {
     public static void main(String[] args) {
@@ -20,7 +16,6 @@ public class Solutions {
         //     System.out.print(i + " ");
         // }
 
-        System.out.println(MaximumSumOfDistinctSubarrWithK.maximumSubarraySum(new int[]{1,1,4,2,9,9,9}, 3));
-        
+        System.out.println(ScoreOfParentheses.scoreOfParentheses("(()(()))"));
     }
 }

@@ -1,8 +1,4 @@
-package sliding_window;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+package SlidingWindow;
 
 public class FindPowerOfSubarray {
     public static int[] resultsArray(int[] nums, int k) {
