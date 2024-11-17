@@ -1,7 +1,5 @@
 package Stack;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.Stack;
 
 public class ScoreOfParentheses {
@@ -30,6 +28,18 @@ public class ScoreOfParentheses {
             else {
                 score = st.pop() + Math.max(2 * score, 1); // update the score, then in new loop, push the current core on the top of the stack
             }
+        }
+        return score;
+    }
+
+    public static int scoreOfParentheses2(String s) {
+        int score = 0, depth = 0;
+        for (int i = 0; i < s.length(); i++)
+        {
+            depth += (s.charAt(i) == '(') ? 1 : -1;
+
+            if (s.charAt(i) == ')' && s.charAt(i-1) == '(')
+                score += (int) Math.pow(2.0, depth);
         }
         return score;
     }

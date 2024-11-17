@@ -16,6 +16,8 @@ public class Solutions {
         //     System.out.print(i + " ");
         // }
 
-        System.out.println(ScoreOfParentheses.scoreOfParentheses("(()(()))"));
+//        System.out.println(ScoreOfParentheses.scoreOfParentheses2("(()(()))"));
+        System.out.println(Stack.BasicCalculator.calculate("(3-(5-(8)-(2+(9-(0-(8-(2))))-(4))-(4)))"));
     }
+
 }
